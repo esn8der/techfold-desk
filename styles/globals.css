@@ -71,7 +71,7 @@ body {
 }
 
 .animated-element {
-  animation: customBounce 4s infinite;
+  animation: customBounce 3s infinite;
 }
 
 @keyframes customBounce {
@@ -79,6 +79,6 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); /* Ajusta este valor para controlar la altura del rebote */
+    transform: translateY(-15px);
   }
 }
