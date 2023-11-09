@@ -66,15 +66,6 @@ const WaitListDialog = () => {
             Por favor, completa el formulario.
           </DialogContentText>
           <form>
-            {/* <TextField
-                fullWidth
-                label="Nombre"
-                name="name"
-                autoComplete="name"
-                variant="filled"
-                margin="normal"
-                required
-              /> */}
             <TextField
               fullWidth
               label="Email"

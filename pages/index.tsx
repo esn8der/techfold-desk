@@ -10,7 +10,6 @@ import {
   BiLineChart,
   BiSolidPlaneTakeOff,
   BiSolidCheckShield,
-  BiRightArrowAlt,
 } from "react-icons/bi";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,14 +21,9 @@ export default function Home() {
     >
       <div className="flex flex-row h-[82vh] mt-24 gap-36">
         <div className="flex flex-col basis-2/3 pt-16 gap-5">
-          <h1 className="text-6xl tracking-tighter leading-snug font-bold  whitespace-normal line-clamp-3">
-            <span className="box-decoration-clone bg-gradient-to-r from-emerald-600 to-green-700 text-white px-2 ...">
-              TechFold
-              <br />
-              <span className="before:absolute before:-inset-0.5 before:-skew-y-1 before:bg-gradient-to-r before:from-emerald-600 before:to-green-700 relative inline-block">
-                <span className="relative">Desk</span>
-              </span>{" "}
-            </span>
+          <span className="font-semibold text-emerald-600">La mesa portátil que te acompaña a donde vayas!</span>
+          <h1 className="text-6xl tracking-tighter leading-snug font-bold w-fit bg-gradient-to-r from-emerald-600 to-green-700 text-white whitespace-normal line-clamp-3">
+          TechFold Desk
           </h1>
           <p className="text-emerald-100/70">
             Imagina una mesa que puedas usar en cualquier lugar, que se adapte a
@@ -40,11 +34,6 @@ export default function Home() {
             o tu teléfono, y un diseño ergonómico que te garantiza el máximo
             confort. ¿Es lo que buscabas? Pide la tuya ya!
           </p>
-          {/* <button className="group relative overflow-clip inline-flex w-fit mt-10 items-center justify-center h-10 px-7 text-sm font-medium tracking-wide text-white transition duration-300 rounded whitespace-nowrap bg-teal-500 hover:bg-teal-600 focus:bg-teal-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-teal-300 disabled:bg-teal-300 disabled:shadow-none">
-            <BiRightArrowAlt className="absolute mr-2 text-xl -translate-x-24 group-hover:-translate-x-14 transition-all duration-300 ease-in scale-50 group-hover:scale-100" />
-            <span className="-translate-x-3 group-hover:translate-x-4 transition-transform duration-300 ease-in">Lista de espera</span>
-            <BiRightArrowAlt className="absolute ml-2 text-xl translate-x-14 group-hover:translate-x-24 group-hover:scale-50 transition-all duration-300 ease-in" />
-          </button> */}
           <WaitListDialog />
         </div>
         <div className="relative">
@@ -59,9 +48,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col gap-10">
-        <span className="text-5xl font-bold">
-          Beneficios y Características
-        </span>
+        <span className="text-5xl font-bold">Beneficios y Características</span>
         <div className="flex flex-row flex-wrap gap-16 justify-between mb-14">
           <FeatureCard
             Icon={GiFoldedPaper}
@@ -71,7 +58,7 @@ export default function Home() {
           />
           <FeatureCard
             Icon={GiBatteryPack}
-            title="Carga de Dispositivos en Movimiento"
+            title="Carga de Dispositivos"
             description="La batería integrada te permite cargar tu laptop y tu teléfono mientras trabajas en cualquier lugar, 
                         sin preocuparte por encontrar tomas de corriente."
           />

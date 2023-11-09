@@ -82,3 +82,7 @@ body {
     transform: translateY(-15px);
   }
 }
+
+.adjust-text {
+  text-wrap: balance;
+}
