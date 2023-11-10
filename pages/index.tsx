@@ -17,13 +17,18 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col mt-20 px-48 ${inter.className}`}
+      className={`flex min-h-screen flex-col mt-20 px-8 md:px-48 ${inter.className}`}
     >
-      <div className="flex flex-row h-[82vh] mt-24 gap-36">
+      <div className="flex flex-col md:flex-row md:gap-36 gap-10  min-h-[82vh] mt-24">
         <div className="flex flex-col basis-2/3 pt-16 gap-5">
-          <span className="font-semibold text-emerald-600">La mesa portátil que te acompaña a donde vayas!</span>
-          <h1 className="text-6xl tracking-tighter leading-snug font-bold w-fit bg-gradient-to-r from-emerald-600 to-green-700 text-white whitespace-normal line-clamp-3">
-          TechFold Desk
+          <span className="font-semibold text-xl md:text-2xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-green-700 ">
+            La mesa portátil que te acompaña a donde vayas!
+          </span>
+
+          <h1 className="text-6xl tracking-tighter leading-snug font-bold w-fit text-white whitespace-normal line-clamp-3">
+            TechFold
+            {" "}
+            <span className="font-bold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-emerald-600 to-green-700">Desk</span>
           </h1>
           <p className="text-emerald-100/70">
             Imagina una mesa que puedas usar en cualquier lugar, que se adapte a

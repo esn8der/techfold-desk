@@ -18,7 +18,7 @@ const Navbar = () => {
             {/*      <!-- Brand logo --> */}
             <div className="">
               <Image
-                src="/img/LogoCUT.svg"
+                src="/img/Logo.svg"
                 alt="Logo"
                 width={270}
                 height={10}
