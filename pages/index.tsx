@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col mt-20 px-8 md:px-48 ${inter.className}`}
+      className={`flex flex-col min-h-screen mt-20 px-4 md:px-8 lg:px-48 ${inter.className}`}
     >
       <div className="flex flex-col md:flex-row md:gap-36 gap-10  min-h-[82vh] mt-24">
         <div className="flex flex-col basis-2/3 pt-16 gap-5">
@@ -54,7 +54,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col gap-10">
         <span className="text-5xl font-bold">Beneficios y Características</span>
-        <div className="flex flex-row flex-wrap gap-16 justify-between mb-14">
+        <div className="flex flex-wrap gap-8 justify-center md:justify-between mb-14">
           <FeatureCard
             Icon={GiFoldedPaper}
             title="Portabilidad Total"
