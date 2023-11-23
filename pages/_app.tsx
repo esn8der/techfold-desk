@@ -20,24 +20,30 @@ const theme = createTheme({
       main: "#005639",
     },
     background: {
-      paper: "#1f2933",
+      paper: "#184e4a",
     },
     text: {
       primary: "#fff",
-      secondary: "#C4C4FF",
+      secondary: "#d1fae5",
     },
   },
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          color: "#fff",
+          color: "#000",
           borderRadius: "8px",
           fontWeight: "bold",
           transition: "all 200ms ease-in",
           padding: "0.75rem 1rem",
           "&:hover": {
             transform: "scale(1.05)",
+          },
+        },
+        contained: {
+          backgroundColor: "#00d68f",
+          "&:hover": {
+            backgroundColor: "#00d68f",
           },
         },
       },
@@ -49,7 +55,7 @@ const theme = createTheme({
           lineHeight: "2.25rem",
           fontWeight: "bold",
           borderWidth: "2px",
-          borderColor: "#374151",
+          borderColor: "#011a0b",
           borderBottomWidth: "0px",
           textAlign: "center",
           color: "#fff",
@@ -60,10 +66,10 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           borderWidth: "2px",
-          borderColor: "#374151",
+          borderColor: "#011a0b",
           borderTopWidth: "0px",
           borderBottomWidth: "0px",
-          backgroundColor: "#1f2933",
+          backgroundColor: "#184e4a",
         },
       },
     },
@@ -71,16 +77,16 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           textAlign: "center",
-          color: "#C4C4FF",
+          color: "#d1fae5",
         },
       },
     },
     MuiTextField: {
       styleOverrides: {
         root: {
-          backgroundColor: "#283542",
+          backgroundColor: "#184e4a",
           "& .MuiFilledInput-root": {
-            backgroundColor: "#283542",
+            backgroundColor: "#17706a",
           },
         },
       },
@@ -88,10 +94,10 @@ const theme = createTheme({
     MuiDialogActions: {
       styleOverrides: {
         root: {
-          backgroundColor: "#1f2933",
+          backgroundColor: "#184e4a",
           gap: "0.5rem",
           borderWidth: "2px",
-          borderColor: "#374151",
+          borderColor: "#011a0b",
           borderTopWidth: "0px",
         },
       },
@@ -102,11 +108,11 @@ const theme = createTheme({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <SnackbarProvider maxSnack={3} autoHideDuration={3000}>
-      <Layout>
-        <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
+        <Layout>
           <Component {...pageProps} />
-        </ThemeProvider>
-      </Layout>
+        </Layout>
+      </ThemeProvider>
     </SnackbarProvider>
   );
 }

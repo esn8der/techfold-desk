@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { ContactDialog } from "./dialogs/ContactDialog";
 
 const Navbar = () => {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   return (
     <>
@@ -97,12 +99,22 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="flex items-center sm:mx-20">
-              <button className="button" data-text="Awesome">
+              <button
+                className="button"
+                data-text="Awesome"
+                onClick={() => {
+                  setIsDialogOpen(true);
+                }}
+              >
                 <span className="actual-text">&nbsp;Contact&nbsp;</span>
                 <span aria-hidden="true" className="hover-text">
                   &nbsp;Contact&nbsp;
                 </span>
               </button>
+              <ContactDialog
+                open={isDialogOpen}
+                onClose={() => setIsDialogOpen(false)}
+              />
             </div>
           </nav>
         </div>

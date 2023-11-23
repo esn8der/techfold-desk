@@ -13,7 +13,7 @@ export default function About() {
           <h1 className="text-6xl font-bold w-fit text-white">
             Sobre Nosotros
           </h1>
-          <p className="mx-auto">
+          <p className="mx-auto adjust-text">
             En TechFold Desk, somos un equipo apasionado de innovadores que
             creen en la combinación perfecta entre tecnología y comodidad.
             Nuestra historia comenzó con la idea de crear una solución que
@@ -32,7 +32,7 @@ export default function About() {
         </section>
         <section className="flex flex-col relative lg:absolute pt-16 gap-5 max-w-full lg:max-w-3xl mt-20 px-4 lg:px-16 py-20 bg-emerald-900/70 lg:top-[100%] lg:left-[50%]">
           <h1 className="text-6xl font-bold w-fit text-white">Misión</h1>
-          <p className="mx-auto">
+          <p className="mx-auto adjust-text">
             Nuestra misión en TechFold Desk es simple pero poderosa: Empoderar a
             las personas para que trabajen y se diviertan de manera óptima, sin
             importar dónde se encuentren. Nos esforzamos por ofrecer productos
@@ -49,7 +49,7 @@ export default function About() {
         </section>
         <section className="flex flex-col relative lg:absolute pt-16 gap-5 max-w-full lg:max-w-3xl mt-20 px-4 lg:px-16 py-20 bg-emerald-900/70 lg:top-[200%] lg:left-[24.7%]">
           <h1 className="text-6xl font-bold w-fit text-white">Visión</h1>
-          <p className="mx-auto">
+          <p className="mx-auto adjust-text">
             Nuestra visión es liderar la revolución del espacio de trabajo,
             brindando a las personas la libertad de trabajar y estudiar en sus
             propios términos. Queremos que cada usuario de TechFold Desk sienta

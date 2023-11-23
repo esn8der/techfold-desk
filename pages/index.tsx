@@ -17,11 +17,11 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main
-      className={`flex flex-col min-h-screen mt-20 px-4 md:px-8 lg:px-48 ${inter.className}`}
+      className={`flex flex-col min-h-screen mt-20 px-4 overflow-x-hidden md:overflow-auto md:px-8 lg:px-48 ${inter.className}`}
     >
       <div className="flex flex-col md:flex-row md:gap-36 gap-10  min-h-[82vh] mt-24">
         <div className="flex flex-col basis-2/3 pt-16 gap-5">
-          <span className="font-semibold text-xl md:text-2xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-green-700 ">
+          <span className="font-semibold text-xl md:text-2xl adjust-text lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-green-700 ">
             La mesa portátil que te acompaña a donde vayas!
           </span>
 
@@ -30,7 +30,7 @@ export default function Home() {
             {" "}
             <span className="font-bold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-emerald-600 to-green-700">Desk</span>
           </h1>
-          <p className="text-emerald-100/70">
+          <p className="text-emerald-100/70 adjust-text">
             Imagina una mesa que puedas usar en cualquier lugar, que se adapte a
             tu estilo de vida y que te ofrezca la mejor experiencia de trabajo.
             Esa mesa existe y se llama TechFold. TechFold es una mesa plegable

@@ -31,8 +31,8 @@ body {
 /* button styling */
 .button {
   --border-right: 6px;
-  --text-stroke-color: rgba(255,255,255,0.6);
-  --animation-color: #37FF8B;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #37ff8b;
   --fs-size: 1em;
   letter-spacing: 3px;
   text-decoration: none;
@@ -59,7 +59,7 @@ body {
 /* hover */
 .button:hover .hover-text {
   width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color))
+  filter: drop-shadow(0 0 23px var(--animation-color));
 }
 
 .animated-element {
@@ -67,7 +67,8 @@ body {
 }
 
 @keyframes customBounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
