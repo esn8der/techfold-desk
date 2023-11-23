@@ -16,14 +16,25 @@ const Navbar = () => {
             role="navigation"
           >
             {/*      <!-- Brand logo --> */}
-            <div className="">
-              <Image
-                src="/img/Logo.svg"
-                alt="Logo"
-                width={270}
-                height={10}
-                className="self-center hover:stroke-emerald-50"
-              />
+            <div className="flex justify-center">
+              <Link href="/">
+                <Image
+                  src="/img/Symbol.svg"
+                  alt="Symbol"
+                  width={80}
+                  height={10}
+                  className="self-center hover:stroke-emerald-50 sm:hidden"
+                />
+              </Link>
+              <Link href="/">
+                <Image
+                  src="/img/Logo.svg"
+                  alt="Logo"
+                  width={270}
+                  height={10}
+                  className="self-center hover:stroke-emerald-50 hidden sm:block"
+                />
+              </Link>
             </div>
             {/*      <!-- Mobile trigger --> */}
             <button
@@ -57,7 +68,7 @@ const Navbar = () => {
             <ul
               role="menubar"
               aria-label="Select page"
-              className={`absolute top-0 left-0 z-[-1] h-[28.5rem] w-full justify-center overflow-hidden overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0  lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0  lg:pt-0 lg:opacity-100 ${
+              className={`absolute top-0 left-0 z-[-1] h-[28.5rem] w-full justify-center overflow-hidden overflow-y-auto overscroll-contain bg-emerald-900/90 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0  lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0  lg:pt-0 lg:opacity-100 ${
                 isToggleOpen
                   ? "visible opacity-100 backdrop-blur-sm"
                   : "invisible opacity-0"
@@ -85,7 +96,7 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
-            <div className="flex items-center mx-20">
+            <div className="flex items-center sm:mx-20">
               <button className="button" data-text="Awesome">
                 <span className="actual-text">&nbsp;Contact&nbsp;</span>
                 <span aria-hidden="true" className="hover-text">
