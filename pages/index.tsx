@@ -17,18 +17,19 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main
-      className={`flex flex-col min-h-screen mt-20 px-4 overflow-x-hidden md:overflow-auto md:px-8 lg:px-48 ${inter.className}`}
+      className={`flex flex-col min-h-screen mt-20 px-4 gap-28 overflow-x-hidden md:overflow-auto md:px-8 lg:px-48 ${inter.className}`}
     >
-      <div className="flex flex-col md:flex-row md:gap-36 gap-10  min-h-[82vh] mt-24">
+      <div className="flex flex-col md:flex-row md:gap-36 gap-10  min-h-[70vh] mt-24">
         <div className="flex flex-col basis-2/3 pt-16 gap-5">
           <span className="font-semibold text-xl md:text-2xl adjust-text lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-green-700 ">
             La mesa portátil que te acompaña a donde vayas!
           </span>
 
           <h1 className="text-6xl tracking-tighter leading-snug font-bold w-fit text-white whitespace-normal line-clamp-3">
-            TechFold
-            {" "}
-            <span className="font-bold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-emerald-600 to-green-700">Desk</span>
+            TechFold{" "}
+            <span className="font-bold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-emerald-600 to-green-700">
+              Desk
+            </span>
           </h1>
           <p className="text-emerald-100/70 adjust-text">
             Imagina una mesa que puedas usar en cualquier lugar, que se adapte a
@@ -52,6 +53,7 @@ export default function Home() {
           <span className="absolute w-96 h-20 bg-gradient-to-r from-emerald-600 to-sky-900 rounded-[50%] blur-[80px] top-72 left-16 -z-10"></span>
         </div>
       </div>
+
       <div className="flex flex-col gap-10">
         <span className="text-5xl font-bold">Beneficios y Características</span>
         <div className="flex flex-wrap gap-8 justify-center md:justify-between mb-14">
@@ -104,6 +106,27 @@ export default function Home() {
                         Es la solución perfecta para aquellos que valoran la estética y la funcionalidad."
           />
         </div>
+      </div>
+      <div className="flex flex-col justify-center items-center gap-10 mb-5">
+        <span className="text-5xl font-bold">Voces de los usuarios</span>
+        <iframe
+          className="sm:hidden"
+          width="260"
+          height="215"
+          src="https://www.youtube.com/embed/aMYZZL8OQVI?si=6w5m3S_ReRKnUljH"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+        <iframe
+          className="hidden sm:block"
+          width="760"
+          height="515"
+          src="https://www.youtube.com/embed/aMYZZL8OQVI?si=6w5m3S_ReRKnUljH"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
       </div>
     </main>
   );
