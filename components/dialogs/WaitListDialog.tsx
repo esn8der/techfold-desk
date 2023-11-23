@@ -40,10 +40,7 @@ const WaitListDialog = () => {
 
   return (
     <div>
-      <Button
-        sx={{
-          mt: "2.5rem",
-        }}
+      <button
         className="group relative overflow-clip inline-flex w-fit mt-10 items-center justify-center h-10 px-7 text-sm font-medium tracking-wide text-white transition duration-300 rounded whitespace-nowrap bg-teal-500 hover:bg-teal-600 focus:bg-teal-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-teal-300 disabled:bg-teal-300 disabled:shadow-none"
         onClick={handleOpen}
       >
@@ -52,7 +49,7 @@ const WaitListDialog = () => {
           Lista de espera
         </span>
         <BiRightArrowAlt className="absolute ml-2 text-xl translate-x-14 group-hover:translate-x-24 group-hover:scale-50 transition-all duration-300 ease-in" />
-      </Button>
+      </button>
       <Dialog
         open={isDialogOpen}
         TransitionComponent={Transition}
