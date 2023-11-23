@@ -89,6 +89,7 @@ const WaitListDialog = () => {
           <Button onClick={handleClose}>Cerrar</Button>
           <Button
             onClick={handleSubmit}
+            variant="contained"
             className="bg-gradient-to-l from-gradient-primary to-[#00d68f]"
           >
             Enviar
